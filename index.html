@@ -1,9 +1,561 @@
- <!DOCTYPE html>
- <html lang="en">
-     <head>
-         <title>My Site</title>
-     </head>
-     <body>
-         This is my Github page
-     </body>
- </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Autism Diagnostic Test</title>
+</head>
+
+<body>
+    <div class="container title" id="titletop">
+        <div class="container"><h2 id="title">Autism Diagnostic Test</h2></div>
+    </div>
+
+    <div class="navbar">
+        <ul class="nav flex-column" style=background-color:transparent>
+            <li class="nav-item">
+                <a class="nav-link rounded" id="navbarlink" href="#top">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rounded" id="navbarlink" href="#test">Take the Test</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rounded" id="navbarlink" href="#result">Results</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rounded" id="navbarlink" href="#next">What's Next?</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rounded" id="navbarlink" href="#resources">Resources</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container" id="top">
+        <div><p>If you are here, it is likely that you are interested in finding out whether you are autistic or have some suspicion
+        that you might be. And you would be in great company too! Alan Turing, Greta Thunberg, and Anthony Hopkins are all
+        people who made a huge difference and who have shown the world that autism is not a dirty word and that it is not a
+        disease. Autism is quite literally a state of mind: some people are extroverted, some are gay, and some people are
+        autistic.</p></div>       
+    </div>
+
+    <div class="container">
+        <h4 class="headline">Before you take the test</h4>
+        <p>Forget everything you think you know about autism from popular culture. It is almost never like you see in the movies,
+        especially if you are a woman. Very few autistic people are Rain Mans, Sheldon Coopers, or Sherlocks. There is no
+        inherent genius hiding behind every autistic person.</p>
+        <p>If this test indicates that you might be autistic, do not think of it as a death sentence but an opportunity to explore
+        who you are.</p>
+        <p>This test was put together by a group of autistic people who post on Instagram as <a href="https://www.instagram.com/p/B_WTw_2n9bF/">The Autisticats</a>. Unlike most
+        diagnostic tools put together by neurotypical (non-autistic) people, these questions do not focus on how autistic people appear to
+        others and it does not assume you are a four-year old boy interested in train schedules. Instead, it asks about how you
+        see yourself and what your life experiences have been so far. Most importantly, who better screen for autism than other
+        autistic people?</p>
+    </div>
+
+    <div class="container" id="test">
+        <h4 class="headline">Take the test</h4>
+        <p>Check a box if the answer is yes.</p>
+    </div>
+
+    <div class="container test">
+        <div class="form-check shadow p-3 mb-3 rounded">
+            <div class="row justify-content-start">
+                <div class="col-1" >
+                    <input type="checkbox" class="custom-control-input" id="customCheck">
+                    <label class="custom-control-label" for="customCheck1"></label>
+                </div>
+                <div class="col">
+                    <p>1. Did you learn to speak either very early or unusually late?</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-check shadow p-3 mb-3 rounded">
+            <div class="row justify-content-start">
+                <div class="col-1">
+                    <input type="checkbox" class="custom-control-input" id="customCheck">
+                    <label class="custom-control-label" for="customCheck2"></label>
+                </div>
+                <div class="col">
+                    <p>2. Did you learn to walk unusually late?</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-check shadow p-3 mb-3 rounded">
+            <div class="row justify-content-start">
+                <div class="col-1">
+                    <input type="checkbox" class="custom-control-input" id="customCheck">
+                    <label class="custom-control-label text-break" for="customCheck3"></label>
+                </div>
+                <div class="col">
+                    <p>3. When you were younger, did you have
+                    "temper tantrums" or outbursts past the age that you were "supposed" to be having
+                    them, to the point that it was socially unacceptable?</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-check shadow p-3 mb-3 rounded">
+            <div class="row justify-content-start">
+                <div class="col-1">
+                    <input type="checkbox" class="custom-control-input" id="customCheck4">
+                    <label class="custom-control-label" for="customCheck4"></label>
+                </div>
+                <div class="col">
+                    <p>4. Did you have trouble learning things like tying your shoes and riding a bike when you were a kid?</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="form-check shadow p-3 mb-3 rounded">
+            <div class="row justify-content-start">
+                <div class="col-1">
+                    <input type="checkbox" class="custom-control-input" id="customCheck5">
+                    <label class="custom-control-label" for="customCheck5"></label>
+                </div>
+                <div class="col">
+                    <p>5. Were you bullied or socially isolated by classmates in your early childhood and elementary years?</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-check shadow p-3 mb-3 rounded">
+            <div class="row justify-content-start">
+                <div class="col-1">
+                    <input type="checkbox" class="custom-control-input" id="customCheck5">
+                    <label class="custom-control-label" for="customCheck5"></label>
+                </div>
+                <div class="col">
+                    <p>6. Were you bullied or socially isolated by your classmates in your middle school and high school years?</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-check shadow p-3 mb-3 rounded">
+            <div class="row justify-content-start">
+                <div class="col-1">
+                    <input type="checkbox" class="custom-control-input" id="customCheck5">
+                    <label class="custom-control-label" for="customCheck5"></label>
+                </div>
+                <div class="col">
+                    <p>7. Do you often wear the same things every day, such as one jacket or one pair of shoes that you wear constantly?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-check shadow p-3 mb-3 rounded">
+            <div class="row justify-content-start">
+                <div class="col-1">
+                    <input type="checkbox" class="custom-control-input" id="customCheck5">
+                    <label class="custom-control-label" for="customCheck5"></label>
+                </div>
+                <div class="col">
+                    <p>8. Do you often eat the same things every day, or get fixated on certain foods but then get sick of them and move on to
+                    something else?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-check shadow p-3 mb-3 rounded">
+            <div class="row justify-content-start">
+                <div class="col-1">
+                    <input type="checkbox" class="custom-control-input" id="customCheck5">
+                    <label class="custom-control-label" for="customCheck5"></label>
+                </div>
+                <div class="col">
+                    <p>9. Do you get anxious when you don't know what to expect in a given situation, more so than other people?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-check shadow p-3 mb-3 rounded">
+            <div class="row justify-content-start">
+                <div class="col-1">
+                    <input type="checkbox" class="custom-control-input" id="customCheck5">
+                    <label class="custom-control-label" for="customCheck5"></label>
+                </div>
+                <div class="col">
+                    <p>10. Do you find it difficult to handle loud noises, bright lights, strong smells, and large crowds?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="form-check shadow p-3 mb-3 rounded">
+            <div class="row justify-content-start">
+                <div class="col-1">
+                    <input type="checkbox" class="custom-control-input" id="customCheck5">
+                    <label class="custom-control-label" for="customCheck5"></label>
+                </div>
+                <div class="col">
+                    <p>11. Do you find yourself becoming easily disoriented in large open spaces with stairs, like sports arenas and stadiums?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-check shadow p-3 mb-3 rounded">
+            <div class="row justify-content-start">
+                <div class="col-1">
+                    <input type="checkbox" class="custom-control-input" id="customCheck5">
+                    <label class="custom-control-label" for="customCheck5"></label>
+                </div>
+                <div class="col">
+                    <p>12. Do you often pick up on details in your environment that other people don't notice?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-check shadow p-3 mb-3 rounded">
+            <div class="row justify-content-start">
+                <div class="col-1">
+                    <input type="checkbox" class="custom-control-input" id="customCheck5">
+                    <label class="custom-control-label" for="customCheck5"></label>
+                </div>
+                <div class="col">
+                    <p>13. Do you pick up on patterns in your environment that other people don't notice?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-check shadow p-3 mb-3 rounded">
+            <div class="row justify-content-start">
+                <div class="col-1">
+                    <input type="checkbox" class="custom-control-input" id="customCheck5">
+                    <label class="custom-control-label" for="customCheck5"></label>
+                </div>
+                <div class="col">
+                    <p>14. Do you find it difficult and exhausting to make small talk with people you don't know?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-check shadow p-3 mb-3 rounded">
+            <div class="row justify-content-start">
+                <div class="col-1">
+                    <input type="checkbox" class="custom-control-input" id="customCheck5">
+                    <label class="custom-control-label" for="customCheck5"></label>
+                </div>
+                <div class="col">
+                    <p>15. Do you find it difficult or uncomfortable to make prolonged eye contact with people you don't know well?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-check shadow p-3 mb-3 rounded">
+            <div class="row justify-content-start">
+                <div class="col-1">
+                    <input type="checkbox" class="custom-control-input" id="customCheck5">
+                    <label class="custom-control-label" for="customCheck5"></label>
+                </div>
+                <div class="col">
+                    <p>16. Do you often do the same things with your body over and over again, like bouncing your leg, fiddling with a pencil, biting your nails, cracking your knuckles, or tapping your fingers on things?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-check shadow p-3 mb-3 rounded">
+            <div class="row justify-content-start">
+                <div class="col-1">
+                    <input type="checkbox" class="custom-control-input" id="customCheck5">
+                    <label class="custom-control-label" for="customCheck5"></label>
+                </div>
+                <div class="col">
+                    <p>17. Do you have an extreme and unusual passion for a specific subject that you feel compelled to learn everything about,
+                    and tell other people about?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-check shadow p-3 mb-3 rounded">
+            <div class="row justify-content-start">
+                <div class="col-1">
+                    <input type="checkbox" class="custom-control-input" id="customCheck5">
+                    <label class="custom-control-label" for="customCheck5"></label>
+                </div>
+                <div class="col">
+                    <p>18. Do other people often tell you that the way you speak is overly formal, or that you have an unusual affect?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-check shadow p-3 mb-3 rounded">
+            <div class="row justify-content-start">
+                <div class="col-1">
+                    <input type="checkbox" class="custom-control-input" id="customCheck5">
+                    <label class="custom-control-label" for="customCheck5"></label>
+                </div>
+                <div class="col">
+                    <p>19. Do you often find yourself confused in social situations, unsure of what the "correct" thing to do is?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-check shadow p-3 mb-3 rounded">
+            <div class="row justify-content-start">
+                <div class="col-1">
+                    <input type="checkbox" class="custom-control-input" id="customCheck5">
+                    <label class="custom-control-label" for="customCheck5"></label>
+                </div>
+                <div class="col">
+                    <p>20. Have you felt like a social outsider your whole life, like you wanted to fit in but never knew how?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-check shadow p-3 mb-3 rounded">
+            <div class="row justify-content-start">
+                <div class="col-1">
+                    <input type="checkbox" class="custom-control-input" id="customCheck5">
+                    <label class="custom-control-label" for="customCheck5"></label>
+                </div>
+                <div class="col">
+                    <p>21. Have you made friends with autistic people, more easily than you make friends with neurotypical people?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-check shadow p-3 mb-3 rounded">
+            <div class="row justify-content-start">
+                <div class="col-1">
+                    <input type="checkbox" class="custom-control-input" id="customCheck5">
+                    <label class="custom-control-label" for="customCheck5"></label>
+                </div>
+                <div class="col">
+                    <p>22. Do you get freaked out and thrown off by sudden changes in routine, even if they're minor?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-check shadow p-3 mb-3 rounded">
+            <div class="row justify-content-start">
+                <div class="col-1">
+                    <input type="checkbox" class="custom-control-input" id="customCheck5">
+                    <label class="custom-control-label" for="customCheck5"></label>
+                </div>
+                <div class="col">
+                    <p>23. Do you find it extremely difficult or impossible to process what people are saying when multiple people are talking
+                    to you at the same time?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-check shadow p-3 mb-3 rounded">
+            <div class="row justify-content-start">
+                <div class="col-1">
+                    <input type="checkbox" class="custom-control-input" id="customCheck5">
+                    <label class="custom-control-label" for="customCheck5"></label>
+                </div>
+                <div class="col">
+                    <p>24. Do you find yourself getting "stuck" on certain thoughts or behaviors, and being unable to let go of them/ stop
+                    doing them?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-check shadow p-3 mb-3 rounded">
+            <div class="row justify-content-start">
+                <div class="col-1">
+                    <input type="checkbox" class="custom-control-input" id="customCheck5">
+                    <label class="custom-control-label" for="customCheck5"></label>
+                </div>
+                <div class="col">
+                    <p>25. Do you find yourself watching other people to observe how they're interacting with each other, then consciously
+                    mimicking/mirroring what you see, in order to make sure you're saying/doing things that are "socially
+                    appropriate"?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-check shadow p-3 mb-3 rounded">
+            <div class="row justify-content-start">
+                <div class="col-1">
+                    <input type="checkbox" class="custom-control-input" id="customCheck5">
+                    <label class="custom-control-label" for="customCheck5"></label>
+                </div>
+                <div class="col">
+                    <p>26. Do you often get confused about whether or not someone is joking/being sarcastic, especially if they delivered what
+                    they said in a flat tone of voice?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-check shadow p-3 mb-3 rounded">
+            <div class="row justify-content-start">
+                <div class="col-1">
+                    <input type="checkbox" class="custom-control-input" id="customCheck5">
+                    <label class="custom-control-label" for="customCheck5"></label>
+                </div>
+                <div class="col">
+                    <p>27. Do you have trouble managing & completing everyday tasks like brushing your teeth, showering, doing laundry, etc.
+                    without help or reminders?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-check shadow p-3 mb-3 rounded">
+            <div class="row justify-content-start">
+                <div class="col-1">
+                    <input type="checkbox" class="custom-control-input" id="customCheck5">
+                    <label class="custom-control-label" for="customCheck5"></label>
+                </div>
+                <div class="col">
+                    <p>28. Do you feel like your cognitive/intellectual skills are much higher than your practical, everyday living skills?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-check shadow p-3 mb-3 rounded">
+            <div class="row justify-content-start">
+                <div class="col-1">
+                    <input type="checkbox" class="custom-control-input" id="customCheck5">
+                    <label class="custom-control-label" for="customCheck5"></label>
+                </div>
+                <div class="col">
+                    <p>29. Have you often been referred to by others as "sensitive," "weird," "strange," or "dramatic"?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-check shadow p-3 mb-3 rounded">
+            <div class="row justify-content-start">
+                <div class="col-1">
+                    <input type="checkbox" class="custom-control-input" id="customCheck5">
+                    <label class="custom-control-label" for="customCheck5"></label>
+                </div>
+                <div class="col">
+                    <p>30. Do you have habits that others deem inappropriate for your age?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container result" id="result">
+        <div class="row">
+            <div class="col-md-6 offset-md-3" id="result">You answered yes to <span id="selected">0</span> questions.</div>
+        </div>
+    </div>
+    
+
+
+    <div class="container" id="next">
+        <h4 class="headline">What's Next?</h4>
+        <p>If you answered yes to very few questions you are most likely neurotypical. Having said that, no test is perfect and
+        this one is only indicative, so if you still suspect you might be autistic don’t let this stop you.</p>
+        <p>If you answered yes to 15 or more questions you can talk to a psychiatrist or another health care professional and ask
+        about your options for being evaluated for autism.</p>
+        <p> However, an official diagnosis is not necessary to be and call yourself autistic. In fact, some people consciously make the decision not to pursue an
+        evaluation because it changes nothing about their lives. That is perfectly fine. Some people, unfortunately, would like
+        to talk to a professional and get a diagnosis, but (especially if you live in the US) this can be prohibitively expensive
+        or there are no professionals who diagnose autism in adults locally. If this is your case, you can absolutely consider
+        yourself to be autistic even without an official diagnosis.</p>
+        <p>If you want to seek a diagnosis the resources section directs you to a list of professionals who can diagnose autism in adults, but
+        it is also a good idea to look locally for someone who might not be on the list.</p> 
+        <p>You can also try connecting with other autistic people on social media (links in the resources section) to learn about
+        autism.</p>
+    </div>
+
+
+
+    <div class="container" id="resources">
+        <h4 class="headline">Resources</h4>    
+        <div class="container">
+            <div class="row justify-content-evenly">
+                <div class="col-4">
+                    <h7>General:</h7>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-transparent"><a href="https://neuroclastic.com/" class="text-decoration-none ">Neuroclastic</a></li>
+                        <li class="list-group-item bg-transparent"><a href="https://neuroclastic.com/autism/what-is-autism/" class="text-decoration-none ">What Is Autism?</a></li>
+                        <li class="list-group-item bg-transparent"><a href="https://neuroclastic.com/category/autism/diagnosis/late-diagnosis/" class="text-decoration-none ">Late Diagnosis</a></li>
+                    </ul>
+                    <h7>Diagnosis professionals:</h7>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-transparent"><a href="https://neuroclastic.com/diagnosticians/" class="text-decoration-none ">Diagnosticians</a></li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h7>Actually Autistic people on social media:</h7>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-transparent"><a href="https://www.instagram.com/autiebiographical/" class="text-decoration-none ">Autiebiographical</a>
+                        </li>
+                        <li class="list-group-item bg-transparent"><a href="https://www.instagram.com/fidgets.and.fries/" class="text-decoration-none ">fidgets.and.fries</a>
+                        </li>
+                        <li class="list-group-item bg-transparent"><a href="https://www.instagram.com/harisri108/" class="text-decoration-none ">harisri108</a>
+                        </li>
+                        <li class="list-group-item bg-transparent"><a href="https://www.instagram.com/myautisticsoul/" class="text-decoration-none ">myautisticsoul</a>
+                        </li>
+                        <li class="list-group-item bg-transparent"><a href="https://www.instagram.com/neurodivergentrebel/" class="text-decoration-none ">neurodivergentrebel</a>
+                        </li>
+                        <li class="list-group-item bg-transparent"><a href="https://www.instagram.com/nigh.functioning.autism/" class="text-decoration-none ">nigh.functioning.autism</a>
+                        </li>
+                        <li class="list-group-item bg-transparent"><a href="https://www.instagram.com/the.autisticats/" class="text-decoration-none ">the.autisticats</a>
+                        </li>
+                        <li class="list-group-item bg-transparent"><a href="https://www.instagram.com/unnmasked/" class="text-decoration-none ">unnmasked</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container text-center" style="padding-top: 50px;">
+                <a href="https://www.instagram.com/p/B8dgbQghVZk/">
+                    <img src="Comic1.jpg" class="rounded mx-auto d-block shadow" alt="...">
+                </a>
+            </div>
+        </div>        
+    </div>
+
+
+    <script>
+        const selectedElm = document.getElementById('selected');
+
+        function showChecked() {
+            selectedElm.innerHTML = document.querySelectorAll('input[type=checkbox]:checked').length;
+        }
+
+        document.querySelectorAll("input[type=checkbox]").forEach(i => {
+            i.onclick = () => showChecked();
+        });
+    </script>
+
+    <nav class="nav" id="footer">
+        <ul class="nav fixed-bottom justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link text-decoration-none" href="#titletop" >Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-decoration-none link-secondary" href="https://www.hoppersroppers.org/">Designed as part of the Hopper's Roppers curriculum</a>
+            </li>
+        </ul>
+    </nav>
+    
+</body>
+</html>
